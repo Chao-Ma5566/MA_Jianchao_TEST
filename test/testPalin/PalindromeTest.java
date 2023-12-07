@@ -14,6 +14,7 @@ public class PalindromeTest {
 
     static Stream<Arguments> casTestMirror() {
         return Stream.of(
+                //Arg: chaîne, langue, salutation, au revoir, heure
                 Arguments.of("test",
                         new LangueFrancaise(),
                         Expressions.Bonjour,
@@ -75,6 +76,7 @@ public class PalindromeTest {
 
     static Stream<Arguments> casTestPalindrome() {
         return Stream.of(
+                //Arg: langue, salutation, félicité, au revoir, heure
                 Arguments.of(new LangueAnglaise(),
                         Expressions.Hello,
                         Expressions.WellSaid,
