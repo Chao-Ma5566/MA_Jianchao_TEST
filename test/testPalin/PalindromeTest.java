@@ -10,10 +10,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PalindromeTest {
     @ParameterizedTest
     @ValueSource(strings = {"test", "epsi"})
-    public void testMiroir(String chaîne) {
+    public void testMiroirBonjour(String chaîne) {
+        LangueFrancais langue = new LangueFrancais();
         // ETANT DONNE une chaîne n'étant pas un palindrome
-        // QUAND on vérifie si c'est un palindrome
-        String résultat = VérificationPalindrome.Vérifier(chaîne);
+        String résultat = new VérificationPalindrome(langue).Vérifier(chaîne,7);
 
         // ALORS on obtient son miroir
         String inversion = new StringBuilder(chaîne)
@@ -28,12 +28,12 @@ public class PalindromeTest {
     }
 
     @Test
-    public void testPalindrome(){
+    public void testPalindromeBonjour(){
         // ETANT DONNE un palindrome
         String palindrome = "radar";
-
+        LangueFrancais langue = new LangueFrancais();
         // QUAND on vérifie si c'est un palindrome
-        String résultat = VérificationPalindrome.Vérifier(palindrome);
+        String résultat = new VérificationPalindrome(langue).Vérifier(palindrome,7);
 
         // ALORS la chaîne est répétée, suivie de "Bien dit !"
         String attendu = Expressions.Bonjour
@@ -46,48 +46,116 @@ public class PalindromeTest {
         assertEquals(attendu, résultat);
     }
 
-    @Test
-    public void testSalutationBonjour(){
-        // ETANT DONNE c'est matin
-        int hour = 7;
-        // QUAND on vérifie si il dit la salutation de matin
-        String salutation = VérificationPalindrome.GetSalutation(hour);
+    @ParameterizedTest
+    @ValueSource(strings = {"test", "epsi"})
+    public void testMiroirHello(String chaîne) {
+        LangueAnglaise langue = new LangueAnglaise();
+        // ETANT DONNE une chaîne n'étant pas un palindrome
+        String résultat = new VérificationPalindrome(langue).Vérifier(chaîne,7);
 
-        String attendu =  Expressions.Bonjour;
-        assertEquals(attendu, salutation);
-    }
-    @Test
-    public void testSalutationBonsoir(){
-        // ETANT DONNE c'est soir
-        int hour = 19;
-
-        String salutation = VérificationPalindrome.GetSalutation(hour);
-
-        String attendu =  Expressions.Bonsoir;
-        assertEquals(attendu, salutation);
+        // ALORS on obtient son miroir
+        String inversion = new StringBuilder(chaîne)
+                .reverse()
+                .toString();
+        inversion = Expressions.Hello
+                + System.lineSeparator()
+                + inversion
+                + System.lineSeparator()
+                + Expressions.GoodbyeMorning;
+        assertEquals(inversion, résultat);
     }
 
     @Test
-    public void testGetAuRevoirSoir(){
-        // ETANT DONNE c'est soir
-        int hour = 19;
-
-        String salutation = VérificationPalindrome.GetAuRevoir(hour);
+    public void testPalindromeHello(){
+        // ETANT DONNE un palindrome
+        String palindrome = "radar";
+        LangueAnglaise langue = new LangueAnglaise();
+        // QUAND on vérifie si c'est un palindrome
+        String résultat = new VérificationPalindrome(langue).Vérifier(palindrome,7);
 
         // ALORS la chaîne est répétée, suivie de "Bien dit !"
-        String attendu =  Expressions.AuRevoirSoir;
-        assertEquals(attendu, salutation);
+        String attendu = Expressions.Hello
+                + System.lineSeparator()
+                + palindrome
+                + System.lineSeparator()
+                + Expressions.WellSaid
+                + System.lineSeparator()
+                + Expressions.GoodbyeMorning;
+        assertEquals(attendu, résultat);
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"test", "epsi"})
+    public void testMiroirBonsoir(String chaîne) {
+        LangueFrancais langue = new LangueFrancais();
+        // ETANT DONNE une chaîne n'étant pas un palindrome
+        String résultat = new VérificationPalindrome(langue).Vérifier(chaîne,19);
+
+        // ALORS on obtient son miroir
+        String inversion = new StringBuilder(chaîne)
+                .reverse()
+                .toString();
+        inversion = Expressions.Bonsoir
+                + System.lineSeparator()
+                + inversion
+                + System.lineSeparator()
+                + Expressions.AuRevoirSoir;
+        assertEquals(inversion, résultat);
     }
 
     @Test
-    public void testGetAuRevoirMatin(){
-        // ETANT DONNE c'est soir
-        int hour = 7;
-
-        String salutation = VérificationPalindrome.GetAuRevoir(hour);
+    public void testPalindromeBonsoir() {
+        // ETANT DONNE un palindrome
+        String palindrome = "radar";
+        LangueFrancais langue = new LangueFrancais();
+        // QUAND on vérifie si c'est un palindrome
+        String résultat = new VérificationPalindrome(langue).Vérifier(palindrome,19);
 
         // ALORS la chaîne est répétée, suivie de "Bien dit !"
-        String attendu =  Expressions.AuRevoirMatin;
-        assertEquals(attendu, salutation);
+        String attendu = Expressions.Bonsoir
+                + System.lineSeparator()
+                + palindrome
+                + System.lineSeparator()
+                + Expressions.BienDit
+                + System.lineSeparator()
+                + Expressions.AuRevoirSoir;
+        assertEquals(attendu, résultat);
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"test", "epsi"})
+    public void testMiroirGoodnight(String chaîne) {
+        LangueAnglaise langue = new LangueAnglaise();
+        // ETANT DONNE une chaîne n'étant pas un palindrome
+        String résultat = new VérificationPalindrome(langue).Vérifier(chaîne,19);
+
+        // ALORS on obtient son miroir
+        String inversion = new StringBuilder(chaîne)
+                .reverse()
+                .toString();
+        inversion = Expressions.GoodEvening
+                + System.lineSeparator()
+                + inversion
+                + System.lineSeparator()
+                + Expressions.GoodbyeNight;
+        assertEquals(inversion, résultat);
+    }
+    @Test
+    public void testPalindromeGoodnight() {
+        // ETANT DONNE un palindrome
+        String palindrome = "radar";
+        LangueAnglaise langue = new LangueAnglaise();
+        // QUAND on vérifie si c'est un palindrome
+        String résultat = new VérificationPalindrome(langue).Vérifier(palindrome,19);
+
+        // ALORS la chaîne est répétée, suivie de "Bien dit !"
+        String attendu = Expressions.GoodEvening
+                + System.lineSeparator()
+                + palindrome
+                + System.lineSeparator()
+                + Expressions.WellSaid
+                + System.lineSeparator()
+                + Expressions.GoodbyeNight;
+        assertEquals(attendu, résultat);
     }
 }

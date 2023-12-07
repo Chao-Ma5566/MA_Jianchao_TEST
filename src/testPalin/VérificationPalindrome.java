@@ -5,25 +5,30 @@ import java.time.LocalTime;
 import java.util.Date;
 
 public class VérificationPalindrome {
-    public static String Vérifier(String chaîne) {
+    private final LangueInterface langue;
+
+    public VérificationPalindrome(LangueInterface langue) {
+        this.langue = langue;
+    }
+    public String Vérifier(String chaîne, int heure) {
         String miroir =  new StringBuilder(chaîne)
                 .reverse()
                 .toString();
 
         if(miroir.equals(chaîne)) {
-            miroir = GetSalutation(7)
+            miroir = this.langue.GetSalutation(heure)
                     + System.lineSeparator()
                     + miroir
                     + System.lineSeparator()
-                    + Expressions.BienDit
+                    + this.langue.Félicitation()
                     + System.lineSeparator()
-                    + GetAuRevoir(7);
+                    + this.langue.GetAuRevoir(heure);
         }else{
-            miroir = GetSalutation(7)
+            miroir = this.langue.GetSalutation(heure)
                     + System.lineSeparator()
                     + miroir
                     + System.lineSeparator()
-                    + GetAuRevoir(7);
+                    + this.langue.GetAuRevoir(heure);
         }
         return miroir;
     }
@@ -33,22 +38,5 @@ public class VérificationPalindrome {
         Date date = new Date();
         int intHour = Integer.parseInt(time.format(date));
         return intHour;
-    }
-    public static String GetSalutation(int hour) {
-
-        if (hour > 18) {
-            return Expressions.Bonsoir;
-        }else{
-            return Expressions.Bonjour;
-        }
-    }
-
-    public static String GetAuRevoir(int hour) {
-
-        if (hour > 18) {
-            return Expressions.AuRevoirSoir;
-        }else{
-            return Expressions.AuRevoirMatin;
-        }
     }
 }
