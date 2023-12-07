@@ -142,7 +142,7 @@ public class PalindromeTest {
     }
     @Test
     public void testPalindromeGoodnight() {
-        // ETANT DONNE un palindrome
+        // ETANT DONNE un palindrome.
         String palindrome = "radar";
         LangueAnglaise langue = new LangueAnglaise();
         // QUAND on vérifie si c'est un palindrome

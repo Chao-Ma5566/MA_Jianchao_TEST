@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e55e6da-f872-4957-8cfa-98812e3f9689" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/testPalin/LangueAnglaise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testPalin/LangueFrancais.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testPalin/LangueInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testPalin/Expressions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/Expressions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testPalin/VérificationPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/VérificationPalindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/testPalin/PalindromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/testPalin/PalindromeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "premier-jour",
+    "git-widget-placeholder": "version-java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -164,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701860055998</updated>
-      <workItem from="1701860057064" duration="13802000" />
+      <workItem from="1701860057064" duration="14163000" />
     </task>
     <servers />
   </component>
