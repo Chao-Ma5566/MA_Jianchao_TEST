@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e55e6da-f872-4957-8cfa-98812e3f9689" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test/testPalin/utilities/VérificationPalindromeBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testPalin/VérificationPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/VérificationPalindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/testPalin/PalindromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/testPalin/PalindromeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +62,23 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PalindromeTest.testPalindromeGoodnight">
+  <component name="RunManager" selected="JUnit.PalindromeTest.testMiroirBonjour">
+    <configuration name="PalindromeTest.testMiroirBonjour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testCours" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testPalin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testPalin" />
+      <option name="MAIN_CLASS_NAME" value="testPalin.PalindromeTest" />
+      <option name="METHOD_NAME" value="testMiroirBonjour(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PalindromeTest.testMiroirGoodnight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testCours" />
       <extension name="coverage">
@@ -72,22 +90,6 @@
       <option name="PACKAGE_NAME" value="testPalin" />
       <option name="MAIN_CLASS_NAME" value="testPalin.PalindromeTest" />
       <option name="METHOD_NAME" value="testMiroirGoodnight(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PalindromeTest.testMiroirHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testCours" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testPalin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testPalin" />
-      <option name="MAIN_CLASS_NAME" value="testPalin.PalindromeTest" />
-      <option name="METHOD_NAME" value="testMiroirHello(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PalindromeTest.testMiroirBonjour" />
         <item itemvalue="JUnit.PalindromeTest.testPalindromeGoodnight" />
         <item itemvalue="JUnit.PalindromeTest.testMiroirGoodnight" />
         <item itemvalue="JUnit.PalindromeTest.testPalindromeBonsoir (1)" />
         <item itemvalue="JUnit.PalindromeTest.testPalindromeBonjour" />
-        <item itemvalue="JUnit.PalindromeTest.testMiroirHello" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701860055998</updated>
-      <workItem from="1701860057064" duration="14163000" />
+      <workItem from="1701860057064" duration="18140000" />
     </task>
     <servers />
   </component>

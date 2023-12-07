@@ -3,6 +3,7 @@ package testPalin;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import testPalin.utilities.VérificationPalindromeBuilder;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -12,8 +13,11 @@ public class PalindromeTest {
     @ValueSource(strings = {"test", "epsi"})
     public void testMiroirBonjour(String chaîne) {
         LangueFrancais langue = new LangueFrancais();
+        var vérificateur = new VérificationPalindromeBuilder()
+                .PourLangue(langue)
+                .Build();
         // ETANT DONNE une chaîne n'étant pas un palindrome
-        String résultat = new VérificationPalindrome(langue).Vérifier(chaîne,7);
+        String résultat = vérificateur.Vérifier(chaîne,7);
 
         // ALORS on obtient son miroir
         String inversion = new StringBuilder(chaîne)

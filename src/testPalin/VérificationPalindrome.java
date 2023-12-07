@@ -1,7 +1,6 @@
 package testPalin;
 
 import java.text.SimpleDateFormat;
-import java.time.LocalTime;
 import java.util.Date;
 
 public class VérificationPalindrome {
