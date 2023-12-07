@@ -1,10 +1,8 @@
 package testPalin;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.jupiter.params.provider.ValueSource;
 import testPalin.utilities.VérificationPalindromeBuilder;
 
 
@@ -56,13 +54,14 @@ public class PalindromeTest {
     @ParameterizedTest
     @MethodSource("casTestMirror")
     public void testMiroir(String chaîne, LangueInterface langue, String salutation, String auRevoir, int heure) {
+        // ETANT DONNE un utilisateur parlant une langue
         var vérificateur = new VérificationPalindromeBuilder()
                 .PourLangue(langue)
                 .Build();
-        // ETANT DONNE une chaîne n'étant pas un palindrome
+        // Quand on saisit une chaine dans une prériode de la journée
         String résultat = vérificateur.Vérifier(chaîne,heure);
 
-        // ALORS on obtient son miroir
+        // ALORS <Salutation> <Au revoir> de cette langue à cette période est envoyé
         String inversion = new StringBuilder(chaîne)
                 .reverse()
                 .toString();
@@ -117,15 +116,15 @@ public class PalindromeTest {
     @ParameterizedTest
     @MethodSource("casTestPalindrome")
     public void testPalindrome(LangueInterface langue, String salutation,String félicité, String auRevoir, int heure){
-        // ETANT DONNE un palindrome
+        // ETANT DONNE un utilisateur parlant une langue
         String palindrome = "radar";
         var vérificateur = new VérificationPalindromeBuilder()
                 .PourLangue(langue)
                 .Build();
-        // QUAND on vérifie si c'est un palindrome
+        // Quand on saisit une palindrome dans une prériode de la journée
         String résultat = vérificateur.Vérifier(palindrome,heure);
 
-        // ALORS la chaîne est répétée, suivie de "Bien dit !"
+        // ALORS <Salutation> <Félicité> <Au revoir> de cette langue à cette période est envoyé
         String attendu = salutation
                         + System.lineSeparator()
                         + palindrome
