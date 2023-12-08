@@ -139,4 +139,23 @@ public class PalindromeTest {
                         + auRevoir;
         assertEquals(attendu, résultat);
     }
+    static Stream<Arguments> casChaineVide() {
+        return Stream.of(
+                //Arg: langue, messageChianeVide
+                Arguments.of(new LangueAnglaise(), Expressions.Repeat),
+                Arguments.of(new LangueFrancaise(), Expressions.Répétez)
+        );
+    };
+
+    @ParameterizedTest
+    @MethodSource("casChaineVide")
+    public void testChaineVide(LangueInterface langue, String message){
+        // ETANT DONNE un utilisateur parlant une langue
+        LangueInterface langueSortie = langue;
+
+        // Quand on saisit une chaine de caractaire vide
+        var attendu = langueSortie.ChaineVide();
+        // ALORS utilisateur doit recevoir un message de demande de répéter dans son <Langue>
+        assertEquals(attendu, message);
+    }
 }

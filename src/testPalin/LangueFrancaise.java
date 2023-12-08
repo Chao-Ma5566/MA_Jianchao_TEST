@@ -24,4 +24,8 @@ public class LangueFrancaise implements LangueInterface{
             return Expressions.AuRevoirMatin;
         }
     }
+
+    public String ChaineVide(){
+        return Expressions.Répétez;
+    }
 }

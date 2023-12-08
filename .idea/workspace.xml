@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e55e6da-f872-4957-8cfa-98812e3f9689" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/testPalin/LangueSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testPalin/command/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testPalin/Expressions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/Expressions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testPalin/LangueAnglaise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/LangueAnglaise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testPalin/LangueFrancaise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/LangueFrancaise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testPalin/LangueInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/LangueInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testPalin/command/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/command/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/testPalin/PalindromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/testPalin/PalindromeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +68,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PalindromeTest.getLangue">
+  <component name="RunManager" selected="JUnit.PalindromeTest.testChaineVide">
     <configuration name="PalindromeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testCours" />
       <extension name="coverage">
@@ -99,6 +100,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PalindromeTest.testChaineVide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testCours" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testPalin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testPalin" />
+      <option name="MAIN_CLASS_NAME" value="testPalin.PalindromeTest" />
+      <option name="METHOD_NAME" value="testChaineVide(testPalin.LangueInterface,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PalindromeTest.testMiroir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testCours" />
       <extension name="coverage">
@@ -110,22 +127,6 @@
       <option name="PACKAGE_NAME" value="testPalin" />
       <option name="MAIN_CLASS_NAME" value="testPalin.PalindromeTest" />
       <option name="METHOD_NAME" value="testMiroir(java.lang.String,testPalin.LangueInterface,java.lang.String,java.lang.String,int)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PalindromeTest.testMiroirBonjour (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testCours" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testPalin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testPalin" />
-      <option name="MAIN_CLASS_NAME" value="testPalin.PalindromeTest" />
-      <option name="METHOD_NAME" value="testMiroirBonjour(java.lang.String,testPalin.LangueInterface,java.lang.String,java.lang.String,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PalindromeTest.testChaineVide" />
         <item itemvalue="JUnit.PalindromeTest.getLangue" />
         <item itemvalue="JUnit.PalindromeTest" />
         <item itemvalue="JUnit.PalindromeTest.testPalindrome" />
         <item itemvalue="JUnit.PalindromeTest.testMiroir" />
-        <item itemvalue="JUnit.PalindromeTest.testMiroirBonjour (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701860055998</updated>
       <workItem from="1701860057064" duration="24017000" />
-      <workItem from="1702037291034" duration="4524000" />
+      <workItem from="1702037291034" duration="5688000" />
     </task>
     <task id="LOCAL-00001" summary="ajouter builder pour VérificationPalindrome">
       <option name="closed" value="true" />
@@ -208,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701963619139</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ajouter LangueSystem">
+      <option name="closed" value="true" />
+      <created>1702045596634</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702045596634</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +228,7 @@
     <MESSAGE value="ajouter aprem et nuit pour salutation et au revoir" />
     <MESSAGE value="Mise à jour de commentaire" />
     <MESSAGE value="Varier l'entrée de test mirror" />
-    <option name="LAST_COMMIT_MESSAGE" value="Varier l'entrée de test mirror" />
+    <MESSAGE value="Ajouter LangueSystem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajouter LangueSystem" />
   </component>
 </project>

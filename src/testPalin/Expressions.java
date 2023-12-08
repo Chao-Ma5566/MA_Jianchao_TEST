@@ -17,4 +17,6 @@ public class Expressions {
     public static String GoodbyeAfternoon = "Have a good afternoon";
     public static String BonneNuit = "Bonne nuit!";
     public static String DorsBien = "Dors bien!";
+    public static String Répétez = "Vous devez entrer quelque chose. Réessayez.";
+    public static String Repeat = "You need entre something, please retry";
 }

@@ -28,4 +28,8 @@ public class LangueAnglaise implements LangueInterface{
             return Expressions.GoodbyeMorning;
         }
     }
+
+    public String ChaineVide(){
+        return Expressions.Repeat;
+    }
 }
