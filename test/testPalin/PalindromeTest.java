@@ -1,5 +1,6 @@
 package testPalin;
 
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -19,7 +20,9 @@ public class PalindromeTest {
                         new LangueFrancaise(),
                         Expressions.Bonjour,
                         Expressions.AuRevoirMatin,
-                        7),
+                        7
+
+                ),
                 Arguments.of("sdgdsg",
                         new LangueAnglaise(),
                         Expressions.Hello,
