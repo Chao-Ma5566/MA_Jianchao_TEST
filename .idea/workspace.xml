@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e55e6da-f872-4957-8cfa-98812e3f9689" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/testPalin/command/ConsoleInputReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testPalin/command/InputReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/testPalin/command/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/testPalin/utilities/MockInputReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testPalin/Expressions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/Expressions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testPalin/LangueAnglaise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/LangueAnglaise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testPalin/LangueFrancaise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/LangueFrancaise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testPalin/LangueInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/LangueInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testPalin/command/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testPalin/command/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testPalin/PalindromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/testPalin/PalindromeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PalindromeTest.testChaineVide">
+  <component name="RunManager" selected="JUnit.MainTest">
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testCours" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testPalin.command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testPalin.command" />
+      <option name="MAIN_CLASS_NAME" value="testPalin.command.MainTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PalindromeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testCours" />
       <extension name="coverage">
@@ -116,22 +130,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PalindromeTest.testMiroir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testCours" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testPalin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testPalin" />
-      <option name="MAIN_CLASS_NAME" value="testPalin.PalindromeTest" />
-      <option name="METHOD_NAME" value="testMiroir(java.lang.String,testPalin.LangueInterface,java.lang.String,java.lang.String,int)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PalindromeTest.testPalindrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testCours" />
       <extension name="coverage">
@@ -150,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.PalindromeTest" />
         <item itemvalue="JUnit.PalindromeTest.testChaineVide" />
         <item itemvalue="JUnit.PalindromeTest.getLangue" />
-        <item itemvalue="JUnit.PalindromeTest" />
         <item itemvalue="JUnit.PalindromeTest.testPalindrome" />
-        <item itemvalue="JUnit.PalindromeTest.testMiroir" />
       </list>
     </recent_temporary>
   </component>
